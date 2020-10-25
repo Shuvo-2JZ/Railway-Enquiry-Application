@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C323C14C-0BF2-476B-B713-95DEF6B8126B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RailwayEnquiryApplication</RootNamespace>
+    <AssemblyName>RailwayEnquiryApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\New folder (3)\Railway_Enquiry\RailwayEnquiryApplication\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\..\New folder (3)\Railway_Enquiry\RailwayEnquiryApplication\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>..\..\..\New folder (3)\Railway_Enquiry\RailwayEnquiryApplication\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Panel.Designer.cs">
+      <DependentUpon>Admin_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelReservation.Designer.cs">
+      <DependentUpon>CancelReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelSchedule.Designer.cs">
+      <DependentUpon>CancelSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cancel_Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cancel_Reservation.Designer.cs">
+      <DependentUpon>Cancel_Reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Delete.Designer.cs">
+      <DependentUpon>Employee_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Panel.Designer.cs">
+      <DependentUpon>Employee_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Profile.Designer.cs">
+      <DependentUpon>Employee_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoticeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoticeInfo.Designer.cs">
+      <DependentUpon>NoticeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice_ADD.Designer.cs">
+      <DependentUpon>Notice_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice_Delete.Designer.cs">
+      <DependentUpon>Notice_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger.Designer.cs">
+      <DependentUpon>Passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger_Delete.Designer.cs">
+      <DependentUpon>Passenger_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger_Panel.Designer.cs">
+      <DependentUpon>Passenger_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger_Profile.Designer.cs">
+      <DependentUpon>Passenger_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeatAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeatAdd.Designer.cs">
+      <DependentUpon>SeatAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeatDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeatDelete.Designer.cs">
+      <DependentUpon>SeatDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketPrice.Designer.cs">
+      <DependentUpon>TicketPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket_Sell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket_Sell.Designer.cs">
+      <DependentUpon>Ticket_Sell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainAdd.Designer.cs">
+      <DependentUpon>TrainAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainSchedule.Designer.cs">
+      <DependentUpon>TrainSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainSearch.Designer.cs">
+      <DependentUpon>TrainSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTrain.Designer.cs">
+      <DependentUpon>UpdateTrain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Panel.resx">
+      <DependentUpon>Admin_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelReservation.resx">
+      <DependentUpon>CancelReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelSchedule.resx">
+      <DependentUpon>CancelSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cancel_Reservation.resx">
+      <DependentUpon>Cancel_Reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Delete.resx">
+      <DependentUpon>Employee_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Panel.resx">
+      <DependentUpon>Employee_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Profile.resx">
+      <DependentUpon>Employee_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoticeInfo.resx">
+      <DependentUpon>NoticeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice_ADD.resx">
+      <DependentUpon>Notice_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice_Delete.resx">
+      <DependentUpon>Notice_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger.resx">
+      <DependentUpon>Passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger_Delete.resx">
+      <DependentUpon>Passenger_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger_Panel.resx">
+      <DependentUpon>Passenger_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger_Profile.resx">
+      <DependentUpon>Passenger_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SeatAdd.resx">
+      <DependentUpon>SeatAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeatDelete.resx">
+      <DependentUpon>SeatDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketPrice.resx">
+      <DependentUpon>TicketPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket_Sell.resx">
+      <DependentUpon>Ticket_Sell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainAdd.resx">
+      <DependentUpon>TrainAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainSchedule.resx">
+      <DependentUpon>TrainSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainSearch.resx">
+      <DependentUpon>TrainSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTrain.resx">
+      <DependentUpon>UpdateTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RailwayEnquiryRepository\RailwayEnquiryRepository.csproj">
+      <Project>{3612eda0-fd2a-4631-8345-cc76771b2689}</Project>
+      <Name>RailwayEnquiryRepository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
